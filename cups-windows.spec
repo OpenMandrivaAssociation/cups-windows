@@ -31,7 +31,7 @@ mkdir -p %{buildroot}%{_docdir}/%{name}
 
 cp i386/* %{buildroot}/%_datadir/cups/drivers
 cp LICENSE.txt README.txt %{buildroot}%{_docdir}/%{name}
-cp %{source1} %{buildroot}%{_docdir}/%{name}
+cp %{SOURCE1} %{buildroot}%{_docdir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
