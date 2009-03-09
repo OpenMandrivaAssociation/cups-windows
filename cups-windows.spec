@@ -1,6 +1,6 @@
 %define name    cups-windows
 %define version 6.0
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name: %{name}
 Version: %{version}
@@ -8,7 +8,8 @@ Release: %{release}
 Summary: Common UNIX Printing System
 License: GPL
 Group: System/Printing
-Source: %{name}-%{version}-source.tar.bz2
+Source0: %{name}-%{version}-source.tar.bz2
+Source1: README.urpmi
 Url: http://www.cups.org/windows/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires: cups
@@ -30,6 +31,7 @@ mkdir -p %{buildroot}%{_docdir}/%{name}
 
 cp i386/* %{buildroot}/%_datadir/cups/drivers
 cp LICENSE.txt README.txt %{buildroot}%{_docdir}/%{name}
+cp %{source1} %{buildroot}%{_docdir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
