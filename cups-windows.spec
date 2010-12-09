@@ -1,6 +1,6 @@
 %define name    cups-windows
 %define version 6.0
-%define release %mkrel 3
+%define release %mkrel 4
 
 Name: %{name}
 Version: %{version}
