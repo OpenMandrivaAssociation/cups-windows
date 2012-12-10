@@ -39,3 +39,23 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %_datadir/cups/drivers
 %{_docdir}/%{name}
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 6.0-4mdv2011.0
++ Revision: 617481
+- the mass rebuild of 2010.0 packages
+
+* Thu Sep 10 2009 Thierry Vignaud <tv@mandriva.org> 6.0-3mdv2010.0
++ Revision: 437166
+- rebuild
+
+* Mon Mar 09 2009 Anne Nicolas <ennael@mandriva.org> 6.0-2mdv2009.1
++ Revision: 353201
+- Add README.urpmi
+
+* Thu Feb 26 2009 Anne Nicolas <ennael@mandriva.org> 6.0-1mdv2009.1
++ Revision: 345350
+- import cups-windows
+
+
