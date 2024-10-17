@@ -10,7 +10,7 @@ License: GPL
 Group: System/Printing
 Source0: %{name}-%{version}-source.tar.bz2
 Source1: README.urpmi
-Url: http://www.cups.org/windows/
+Url: https://www.cups.org/windows/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires: cups
 
